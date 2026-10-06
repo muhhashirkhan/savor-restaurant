@@ -159,7 +159,7 @@ function ReviewStrip() {
 }
 
 function VisitSection({ go }) {
-  return <section className="visit section reveal"><div><p className="eyebrow">Join us</p><h2>There is always<br />room for <em>one more.</em></h2></div><div className="visit-info"><div><span>DINNER</span><p>Tuesday — Sunday<br />5:30 PM — 10:30 PM</p></div><div><span>BRUNCH</span><p>Saturday — Sunday<br />11:00 AM — 2:30 PM</p></div><div><span>FIND US</span><p>88 Vallejo Street<br />San Francisco, CA</p></div></div><button className="button dark-button" onClick={() => go('reservations')}>Reserve a table <Arrow /></button></section>
+  return <section className="visit section reveal"><div className="visit-image"><img loading="lazy" decoding="async" src={images.contact} alt="A warmly lit dining room with tables ready for dinner" /></div><div className="visit-heading"><p className="eyebrow">Join us</p><h2>There is always<br />room for <em>one more.</em></h2></div><div className="visit-info"><div><span>DINNER</span><p>Tuesday — Sunday<br />5:30 PM — 10:30 PM</p></div><div><span>BRUNCH</span><p>Saturday — Sunday<br />11:00 AM — 2:30 PM</p></div><div><span>FIND US</span><p>88 Vallejo Street<br />San Francisco, CA</p></div></div><button className="button dark-button" onClick={() => go('reservations')}>Reserve a table <Arrow /></button></section>
 }
 
 function PageHero({ eyebrow, title, image }) {
